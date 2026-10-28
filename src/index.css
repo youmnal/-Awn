@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", Tahoma, sans-serif;
+  background: #ffffff;
+  color: #134e4a;
+}
+
+::selection {
+  background: #ccfbf1;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-teal-100 bg-white px-4 py-3 text-right text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-awn-500 focus:ring-2 focus:ring-awn-100;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl bg-awn-700 px-5 py-3 font-bold text-white transition hover:bg-awn-800 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-2xl border border-awn-200 bg-white px-5 py-3 font-bold text-awn-800 transition hover:bg-awn-50;
+}
